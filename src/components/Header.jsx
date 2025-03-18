@@ -3,7 +3,8 @@ import { logoutAction } from '../redux/authSlice';
 import { useNavigate, Link } from 'react-router-dom';
 
 const Header = () => {
-  const user = useSelector((state) => state.auth.user);
+  const user = useSelector((state) => state.auth.name);
+  console.log(user)
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
